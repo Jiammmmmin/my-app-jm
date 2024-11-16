@@ -1,0 +1,142 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #fff; /* Text color - adjust to match the design */
+    background-color: #121212; /* Background color */
+    height: 100%;
+    overflow-x: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  /* Main container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  header p {
+    font-size: 1rem;
+    color: #a0a0a0; /* Secondary text color */
+  }
+  
+  /* Section headings */
+  section h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  /* Sharing Configuration */
+  .sharing-config div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sharing-config label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .sharing-config input[type="radio"] {
+    accent-color: #007bff; /* Blue color for selected radio button */
+    width: 18px;
+    height: 18px;
+  }
+  
+  /* User Access List */
+  .user-access .user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    background-color: #1d1d1d;
+  }
+  
+  .user-access .user span {
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .user-access .user select {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    color: #fff;
+  }
+  
+  .user-access .user select:focus {
+    outline: 2px solid #007bff; /* Focus ring */
+  }
+  
+  /* Share Access Button */
+  button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+  }
+  
+  button:active {
+    background-color: #003d80; /* Even darker for active state */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .sharing-config div,
+    .user-access .user {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .user-access .user select {
+      margin-top: 10px;
+      width: 100%;
+    }
+  }
+  
